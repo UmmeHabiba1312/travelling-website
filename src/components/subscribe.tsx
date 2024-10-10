@@ -7,7 +7,7 @@ const Subscribe = () => {
   return (
     <main >
         <div className='bg-purple-100 mx-60 rounded-tl-[90px] '>
-        <div className='bg-purple-600 rounded-full w-8 h-8 flex justify-center items-end text-white text-2xl p-1 ml-[890px] hover:animate-ping'><FaLocationArrow />
+        <div className='bg-purple-600 rounded-full w-8 h-8 flex justify-center items-end text-white text-2xl p-1 md:ml-[890px] hover:animate-ping'><FaLocationArrow />
         </div>
         <p className='text-gray-500 font-medium text-[24px] flex justify-center pt-10'>Subscribe to get information, latest news and other <br /> interesting offers about Jadoo</p>
         <div className='flex bg-purple-100 justify-center gap-4 py-[70px]  rounded-lg'>
