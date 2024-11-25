@@ -1,52 +1,81 @@
-import React from 'react'
-import { FaFacebook } from "react-icons/fa";
-import { FaInstagram } from "react-icons/fa6";
-import { FaTwitter } from "react-icons/fa6";
-import { FaGooglePlay } from "react-icons/fa";
-import { FaApple } from "react-icons/fa";
+import React from 'react';
+import { FaFacebook, FaInstagram, FaTwitter, FaGooglePlay, FaApple } from 'react-icons/fa';
 
 const AboveFooter = () => {
   return (
-    <main className='mt-[100px] h-40 mx-[110px]'>
-        <div className='grid md:grid-cols-5 sm:grid-cols-2'>
-            <div className="1  h-40">
-                <h3 className='text-gray-900 text-5xl font-bold flex justify-center'>Jadoo.</h3>
-                <p className='text-gray-500 font-semibold flex justify-center mt-4'>Back your trip in minute. get full <br />control for much longer.</p>
-            </div>
-            <div className="2  h-40">
-                <h3 className='text-2xl font-bold text-gray-900 flex justify-center'>Company</h3>
-                <p className='font-semibold text-gray-500 flex justify-center mt-4'>About</p>
-                <p className='font-semibold text-gray-500 flex justify-center'>Careers</p>
-                <p className='font-semibold text-gray-500 flex justify-center'>Mobiles</p>
-            </div>
-            <div className="3 h-40">
-            <h3 className='text-2xl font-bold text-gray-900 flex justify-center'>Contact</h3>
-            <p className='font-semibold text-gray-500 flex justify-center mt-4'>Help/FAQ</p>
-                <p className='font-semibold text-gray-500 flex justify-center'>Press</p>
-                <p className='font-semibold text-gray-500 flex justify-center'>Affilates</p>
-            </div>
-            <div className="4  h-40">
-            <h3 className='text-2xl font-bold text-gray-900 flex justify-center'>More</h3>
-            <p className='font-semibold text-gray-500 flex justify-center mt-4'>Airlinefess</p>
-                <p className='font-semibold text-gray-500 flex justify-center'>Airline</p>
-                <p className='font-semibold text-gray-500 flex justify-center'>Low fare tips</p>
-            </div>
-            <div className="5  h-40 w-[300px]">
-                <div className='flex text-4xl justify-center gap-5'>
-                <div className='bg-slate-200 p-2 rounded-lg'><FaFacebook /></div>
-                <div className='bg-slate-200 p-2 rounded-lg'><FaInstagram /></div>
-                <div className='bg-slate-200 p-2 rounded-lg'><FaTwitter /></div>
-                </div>
-                <h4 className='text-gray-600 font-semibold flex justify-center mt-4'>Discover Our App</h4>
-                <div className='flex rounded-lg justify-around  mt-4 '>
-                    <button className='bg-black text-white flex rounded-3xl p-2'><div className='text-3xl mt-2'><FaGooglePlay /> </div><div><p className='text-white font-bold'>Got It On</p> <p className='text-gray-400'>GOOGLE PLAY</p></div></button>
-                    <button className='bg-black text-white flex rounded-3xl  '><div className='text-3xl mt-2'><FaApple /></div><div><p className='text-gray-400'>Available on the</p> <p className='text-white font-bold'>APPLE STORE</p></div></button>
-
-                </div>
-            </div>
+    <main className="mt-[100px] mx-4 md:mx-20 lg:mx-[110px]">
+      <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 gap-8">
+        {/* Company Info */}
+        <div className="flex flex-col justify-center items-center space-y-4">
+          <h3 className="text-3xl md:text-5xl font-bold text-gray-900 mb-4 md:mb-0">Jadoo.</h3>
+          <p className="text-gray-600 text-center font-medium max-w-xs">
+            Back your trip in minutes. Get full control for much longer.
+          </p>
         </div>
-    </main>
-  )
-}
 
-export default AboveFooter
+        {/* Company Links */}
+        <div className="flex flex-col items-center space-y-2 md:space-y-3">
+          <h3 className="text-xl md:text-2xl font-semibold text-gray-900">Company</h3>
+          <p className="font-medium text-gray-500">About</p>
+          <p className="font-medium text-gray-500">Careers</p>
+          <p className="font-medium text-gray-500">Mobiles</p>
+        </div>
+
+        {/* Contact Links */}
+        <div className="flex flex-col items-center space-y-2 md:space-y-3">
+          <h3 className="text-xl md:text-2xl font-semibold text-gray-900">Contact</h3>
+          <p className="font-medium text-gray-500">Help/FAQ</p>
+          <p className="font-medium text-gray-500">Press</p>
+          <p className="font-medium text-gray-500">Affiliates</p>
+        </div>
+
+        {/* More Links */}
+        <div className="flex flex-col items-center space-y-2 md:space-y-3">
+          <h3 className="text-xl md:text-2xl font-semibold text-gray-900">More</h3>
+          <p className="font-medium text-gray-500">Airline Fees</p>
+          <p className="font-medium text-gray-500">Airline</p>
+          <p className="font-medium text-gray-500">Low Fare Tips</p>
+        </div>
+
+        {/* Social & App Links */}
+        <div className="flex flex-col items-center space-y-4">
+          {/* Social Media Icons */}
+          <div className="flex space-x-4 text-3xl text-gray-700">
+            <div className="bg-gray-200 p-2 rounded-lg shadow-md hover:bg-blue-500 hover:text-white transition-all duration-300 cursor-pointer">
+              <FaFacebook />
+            </div>
+            <div className="bg-gray-200 p-2 rounded-lg shadow-md hover:bg-pink-500 hover:text-white transition-all duration-300 cursor-pointer">
+              <FaInstagram />
+            </div>
+            <div className="bg-gray-200 p-2 rounded-lg shadow-md hover:bg-blue-400 hover:text-white transition-all duration-300 cursor-pointer">
+              <FaTwitter />
+            </div>
+          </div>
+
+          <h4 className="text-gray-600 font-semibold mt-4">Discover Our App</h4>
+
+          {/* App Store & Play Store Buttons */}
+          <div className="flex flex-col gap-3 mt-4 md:flex-row md:gap-4">
+            <button className="bg-black text-white flex items-center rounded-lg shadow-md p-3 md:p-3 hover:bg-gray-800 transition-all duration-300 w-full md:w-[150px]">
+              <FaGooglePlay className="text-2xl md:text-3xl mr-2" />
+              <div>
+                <p className="text-xs text-gray-400">Get it on</p>
+                <p className="text-sm font-semibold">Google Play</p>
+              </div>
+            </button>
+
+            <button className="bg-black text-white flex items-center rounded-lg shadow-md p-3 md:p-3 hover:bg-gray-800 transition-all duration-300 w-full md:w-[150px]">
+              <FaApple className="text-2xl md:text-3xl mr-2" />
+              <div>
+                <p className="text-xs text-gray-400">Available on the</p>
+                <p className="text-sm font-semibold">Apple Store</p>
+              </div>
+            </button>
+          </div>
+        </div>
+      </div>
+    </main>
+  );
+};
+
+export default AboveFooter;
