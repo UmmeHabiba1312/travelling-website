@@ -1,6 +1,6 @@
 import React from 'react';
 import { MdOutlineEmail } from "react-icons/md";
-import { FaLocationArrow } from "react-icons/fa6";
+// import { FaLocationArrow } from "react-icons/fa6";
 
 const Subscribe = () => {
   return (
