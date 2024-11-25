@@ -26,7 +26,7 @@ const Testimonial = () => {
             </div>
             <div className="text-center">
               <p className="text-slate-500 text-lg font-medium mb-4">
-                "On the windows talking pasture yet its express parties use. Sure last upon he same as knew next. Of believed or diverted no."
+                On the windows talking pasture yet its express parties use. Sure last upon he same as knew next. Of believed or diverted no.
               </p>
               <h4 className="text-lg font-semibold text-gray-800">John Doe</h4>
               <p className="text-sm text-gray-400">Customer</p>
@@ -48,7 +48,7 @@ const Testimonial = () => {
             </div>
             <div className="text-center">
               <p className="text-slate-500 text-lg font-medium mb-4">
-                "On the windows talking pasture yet its express parties use. Sure last upon he same as knew next. Of believed or diverted no."
+                On the windows talking pasture yet its express parties use. Sure last upon he same as knew next. Of believed or diverted no.
               </p>
               <h4 className="text-lg font-semibold text-gray-800">Jane Smith</h4>
               <p className="text-sm text-gray-400">Customer</p>
@@ -70,7 +70,7 @@ const Testimonial = () => {
             </div>
             <div className="text-center">
               <p className="text-slate-500 text-lg font-medium mb-4">
-                "Amazing service! The whole experience was smooth and enjoyable from start to finish. Highly recommended for anyone looking for a seamless experience."
+                Amazing service. The whole experience was smooth and enjoyable from start to finish. Highly recommended for anyone looking for a seamless experience.
               </p>
               <h4 className="text-lg font-semibold text-gray-800">Alice Williams</h4>
               <p className="text-sm text-gray-400">Customer</p>
